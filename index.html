@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="php"  href="insert.php">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>SAILORS ENTRY</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+ html{
+  background: url("sailorimage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+ 
+ }
+
+body{
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-size: cover;
+  
+ 
+
+  
+}
+
+.content{
+  width: 800px;
+  height: 525px;
+  
+  border-radius: 10px;
+  padding: 60px 40px;
+  padding-top: 40px;
+  
+  margin-top: 100px;
+  box-shadow: -3px -3px 9px #aaa9a9a2,
+              3px 3px 7px rgba(147, 149, 151, 0.671);
+ 
+}
+
+
+.content .text{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: rgb(247, 233, 233);
+}
+
+.content .field{
+  height: 41px;
+  width: 100%;
+  display: flex;
+  position: center;
+  padding-bottom: 1%;
+}
+
+.field input{
+  height: 100%;
+  width: 100%;
+  padding-left: 45px;
+  
+  font-size: 18px;
+  outline: none;
+  border: none;
+  color: #e0d2d2;
+  border: 1px solid rgba(255, 255, 255, 0.438);
+  border-radius: 8px;
+  background: rgba(105, 105, 105, 0);
+ 
+}
+
+
+.field input::placeholder{
+  color: #e0d2d2a6;
+}
+.field:nth-child(2){
+  margin-top: 5px;
+}
+
+.field span{
+  position: absolute;
+  width: 30px;
+  height:2px;
+  color: #f8f7f7;
+}
+
+
+
+button{
+  margin: 25px 0 0 0;
+  width: 100%;
+  height: 50px;
+  color: rgb(238, 226, 226);
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.438);
+  border-radius: 8px;
+  background: rgba(105, 105, 105, 0);
+  margin-top: 20px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  
+ 
+}
+ 
+.content .or{
+  color: rgba(255, 255, 255, 0.733);
+  margin-top: 9px;
+}
+ 
+.icon-button{
+  margin-top: 2px;
+}
+.icon-button span{
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  color: rgba(244, 247, 250, 0.795);
+  border-radius: 5px;
+  line-height: 10px;
+  background: rgba(255, 255, 255, 0.808);
+  backdrop-filter: blur(10px);
+}
+.icon-button span.facebook{
+  margin-right: 17px;
+
+}
+button:hover,
+.icon-button span:hover{
+  background-color: #babecc8c;
+  
+}
+ 
+    </style>
+
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <form name="frmContact" class="needs-validation " method="post" action="insert.php">
+ 
+<div class="content">
+ <div class="text">SAILORS DETAILS</div>
+  <form action="#">
+      
+      
+      <div class="field">
+        <span class="fa fa-lock"></span>
+        <input type="password" class="form-control" name="txtSid " placeholder="Sailors' sid" 
+        id="txtSid" value="" required><br></br>
+        
+      </div>
+      
+      <div class="field">
+        <span class="fa fa-user"></span>
+        <input type="text" class="form-control" name="txtSname" 
+        placeholder="Sailors Name" id="txtSname" value="" required  >
+        
+      </div>
+  
+      <div class="field">
+          <span class="fa fa-user"></span>
+          <input type="text" class="form-control" name="txtRating" placeholder="Rating" 
+          id="txtRating" value="" required><br></br>
+          
+      </div>
+  
+  
+      <div class="field">
+          <span class="fa fa-user"></span>
+          <input type="number" class="form-control" name="txtAge" placeholder="Sailor's age" 
+          id="txtAge" value="" required><br></br>
+          
+      </div>
+    
+    
+
+    
+      <div class="field">
+          <span class="fa fa-lock"></span>
+          <input type="password" class="form-control" name="txtBid" placeholder="Boat's id" 
+          id="txtBid" value="" required><br></br>
+          
+      </div>
+  
+  
+      <div class="field">
+          <span class="BOAT"></span>
+         <input type="text" class="form-control" name="txtBname" placeholder="Boat's Name" 
+         id="txtBname" value="" required><br></br>
+          
+      </div>
+  
+  
+  
+      <div class="field">
+          <span class="BOAT"></span>
+          <input type="text" class="form-control" name="txtColor" placeholder="Boat's Color" 
+          id="txtColor" value="" required><br></br>
+          
+      </div>
+   
+  
+  
+      <div class="field">
+          <span class="Date"></span>
+          <input type="Date" class="form-control" name="txtDay" placeholder="Day" 
+          id="txtDay" value="" required>
+          
+      </div>
+  
+  
+      
+    
+    
+    <div class="icon-button">
+    <button>SUBMIT</button> 
+        
+      
+
+
+    </div>
+  </form>
+</div>
+</form>
+</body>
+</html>
+    
